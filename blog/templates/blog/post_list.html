@@ -4,19 +4,15 @@
     </head>
     <body>
         <div>
-            <h1><a href="/">---Practica Supervisada---</a></h1>
+            <h1><a href="/">--Practica Supervisada--</a></h1>
         </div>
-
-        <div>
-            <p>published: 09.09.2024, 10:00</p>
-            <h2><a href="">Primera Semana</a></h2>
-            <p> No se poner fotos</p>
-        </div>
-
-        <div>
-            <p>published: 09.09.2024, 10:00</p>
-            <h2><a href="">Segunda Semana</a></h2>
-            <p>No se poner fotos</p>
-        </div>
+        
+        {% for post in posts %}
+            <div>
+                <p> publicado: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
