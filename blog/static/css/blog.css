@@ -1,60 +1,71 @@
-h1 a, h2 a {
-    color: #ceeef8;
-}
-
+/* Cambiamos la fuente principal a Arial o sans-serif para un look más moderno */
 body {
     padding-left: 15px;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Los títulos (h1, h2, etc.) en lugar de Lobster, usamos una sans-serif más simple */
 h1 a, h2 a {
     color: #309dac;
-    font-family: 'Lobster';
+    font-family: 'Arial', sans-serif;
 }
 
+/* El encabezado de la página con fondo azul oscuro del logo */
 .page-header {
-    background-color: #C25100;
+    background-color: #0066b2; /* azul del logo */
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 
+/* Cambiamos el color del texto del encabezado a blanco */
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
-
+/* Las fechas y textos pequeños en gris */
 .date {
     color: #828282;
 }
 
-.save {
-    float: right;
+/* Estilo de los posts, agregamos un margen más suave */
+.post {
+    margin-bottom: 70px;
 }
 
-.post-form textarea, .post-form input {
-    width: 100%;
+/* Links dentro de los posts en color negro */
+.post h2 a, .post h2 a:visited {
+    color: #000000;
 }
 
+/* Links de navegación en el menú superior con un estilo moderno */
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+    text-transform: uppercase; /* Esto da un toque moderno al texto */
 }
 
-.post {
-    margin-bottom: 70px;
+/* Formularios en blanco con bordes ligeros */
+.post-form textarea, .post-form input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
-.post h2 a, .post h2 a:visited {
-    color: #000000;
+/* Separación entre los elementos principales */
+.content {
+    margin-left: 40px;
 }
 
+/* Colores más neutros para links dentro del post */
+.post a, .post a:visited {
+    color: #0066b2;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
