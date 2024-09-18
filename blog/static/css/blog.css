@@ -1,71 +1,94 @@
-/* Cambiamos la fuente principal a Arial o sans-serif para un look más moderno */
+/* Cambiamos la fuente principal a una más formal y profesional */
 body {
     padding-left: 15px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif; /* Fuente más formal */
+    color: #333; /* Color de texto más suave */
+    background-color: #e0f7fa; /* Fondo celeste claro */
 }
 
-/* Los títulos (h1, h2, etc.) en lugar de Lobster, usamos una sans-serif más simple */
-h1 a, h2 a {
-    color: #309dac;
-    font-family: 'Arial', sans-serif;
+/* Los títulos (h1, h2, etc.) en una fuente más seria */
+h1, h2 {
+    color: #003366; /* Azul oscuro para una apariencia más formal */
+    font-family: 'Times New Roman', serif; /* Fuente de título más clásica */
 }
 
-/* El encabezado de la página con fondo azul oscuro del logo */
+/* El encabezado de la página con un fondo turquesa */
 .page-header {
-    background-color: #0066b2; /* azul del logo */
+    background-color: #008080; /* Turquesa para un look más profesional */
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    text-align: center; /* Centra el título principal */
 }
 
-/* Cambiamos el color del texto del encabezado a blanco */
+/* Cambiamos el color del texto del encabezado a blanco para contraste */
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
 
-/* Las fechas y textos pequeños en gris */
+/* Las fechas y textos pequeños en gris oscuro */
 .date {
-    color: #828282;
+    color: #666666; /* Gris oscuro para mejor legibilidad */
+    font-size: 24pt; /* Aumenta el tamaño de la fecha */
+    text-align: center; /* Centra la fecha */
 }
 
-/* Estilo de los posts, agregamos un margen más suave */
+/* Estilo de los posts, reducimos el margen para un diseño más compacto */
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    background-color: #ffffff; /* Fondo blanco para los posts */
+    border: 1px solid #dcdcdc; /* Borde gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centra el contenido del post */
 }
 
-/* Links dentro de los posts en color negro */
+/* Links dentro de los posts en color celeste */
 .post h2 a, .post h2 a:visited {
-    color: #000000;
+    color: #00aaff; /* Celeste para un estilo más profesional */
 }
 
-/* Links de navegación en el menú superior con un estilo moderno */
+/* Links de navegación en el menú superior con un estilo más formal */
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 18pt; /* Tamaño de fuente reducido para un look más elegante */
     margin-right: 20px;
-    text-transform: uppercase; /* Esto da un toque moderno al texto */
+    text-transform: none; /* Removemos el texto en mayúsculas para un estilo más sobrio */
 }
 
-/* Formularios en blanco con bordes ligeros */
+/* Formularios en blanco con bordes más discretos */
 .post-form textarea, .post-form input {
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc; /* Borde gris claro para un look más sutil */
     padding: 10px;
+}
+
+/* Centrar las imágenes dentro del post */
+.post img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Hace que la imagen sea responsiva */
+    height: auto;
 }
 
 /* Separación entre los elementos principales */
 .content {
-    margin-left: 40px;
+    margin-left: 20px; /* Reducimos el margen para una apariencia más ajustada */
 }
 
 /* Colores más neutros para links dentro del post */
 .post a, .post a:visited {
-    color: #0066b2;
+    color: #00aaff; /* Celeste para un estilo más profesional */
     text-decoration: none;
 }
 
 .post a:hover {
     text-decoration: underline;
+}
+
+.col-md-8 {
+    margin: 0 auto; /* Centra la columna horizontalmente */
+    float: none; /* Evita que se alineen a la izquierda o derecha */
 }
